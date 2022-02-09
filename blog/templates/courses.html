@@ -1,0 +1,139 @@
+{% extends 'basic.html' %}
+
+{% block title %}Courses page{% endblock title %}
+
+{% block body %}
+{% load static %}
+<!--Main layout-->
+<main class="" style='margin-top:70px'>
+    <div class="container">
+        <!--Section: Content-->
+        <section class="text-center">
+            <h4 class="fs-2 display-5" style="margin-bottom:20px;"><strong style="border-bottom:1px solid">OUR
+                    SERVICES</strong></h4>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{% static 'images/qayedah.jpg'%}" class="img-fluid" />
+                            <a href="/admission">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">NURANI QAYEDAH</h5>
+                            <p class="card-text">This course for whom those aren't know about the arabic language.
+                                By this course you will able to read the holy Quran Inshallah.
+                            </p>
+                            <a href="/admission" class="btn btn-primary">Get admitted now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{% static 'images/namaj.jpg'%}" class="img-fluid" />
+                            <a href="/admission">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">COMPLETE NAMAJ</h5>
+                            <p class="card-text">
+                                Prayer is the most important in our life so as much as possible please join us to
+                                learn praying according to
+                                sunnat and By the Holy Quran.
+                            </p>
+                            <a href="/admission" class="btn btn-primary">Get admitted now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{% static 'images/dua.jpg'%}" class="img-fluid" />
+                            <a href="/admission">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">MASNUN DUA</h5>
+                            <p class="card-text">According to hadith sharif 'DUA IS THE MAIN PART OF WORSHIP' so in
+                                this course you will learn the right way of DUA whis is proved by hadith.
+                            </p>
+                            <a href="/admission" class="btn btn-primary">Get admitted now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{% static 'images/quran.jpg'%}" class="img-fluid" />
+                            <a href="/admission">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">NAZERA QURAN</h5>
+                            <p class="card-text">
+                                Do you want to read Holy Quran but you don't know how to read ? We are here to help
+                                you and we hope you will read the Holy Quran Fluently'
+                            </p>
+                            <a href="/admission" class="btn btn-primary">Get admitted now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{% static 'images/hadis.jpg'%}" class="img-fluid" />
+                            <a href="/admission">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">IMPORTANT HADIS SHARIF</h5>
+                            <p class="card-text">
+                                The Importance of Hadith
+                                after the Qur'an. Hadith is one of the most important sources of Islamic Shari'ah
+                                and one of the main foundations of Islamic life.
+                            </p>
+                            <a href="/admission" class="btn btn-primary">Get admitted now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="{% static 'images/flower.jpg'%}" class="img-fluid" />
+                            <a href="/admission">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">MASAYEL (OPTIONAL)</h5>
+                            <p class="card-text">
+                                This section is iplemented on all courses beacouse we realized that a muslim has to
+                                know the important 'MASAYEL' so that we intend to teach it with other courses
+                            </p>
+                            <a href="/admission" class="btn btn-primary">Get admitted now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section: Content-->
+    </div>
+</main>
+<!--Main layout-->
+{% endblock body %}
+
+{% block js %}{% endblock js %}

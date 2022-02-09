@@ -1,0 +1,59 @@
+{% extends 'basic.html' %}
+
+{% block title %}Admission Pannel{% endblock title %}
+
+{% block body %}
+<div class="container-fluid">
+    <section class="p-4 p-md-5" style="
+    background-image: url(https://mdbcdn.b-cdn.net/img/Photos/Others/background3.webp);
+  ">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-5">
+            <div class="card rounded-3">
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <h3>ADMISSION FORM</h3>
+                    </div>
+                    <form method = "post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-outline mb-4">
+                            <input type="text" id="formControlLgXsd" class="form-control form-control-lg"  name='name'/>
+                            <label class="form-label" for="formControlLgXsd">الاسم (Name)</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="text" id="formControlLgXsd" class="form-control form-control-lg" name='address'/>
+                            <label class="form-label" for="formControlLgXsd">العنوان (Address)</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="text" id="formControlLgXsd" class="form-control form-control-lg" name='mobile'/>
+                            <label class="form-label" for="formControlLgXsd">رقم الجوال (Mobile Number)</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="text" id="formControlLgXsd" class="form-control form-control-lg" name='email'/>
+                            <label class="form-label" for="formControlLgXsd">البريد الالكتروني (Email address)</label>
+                        </div>
+
+                        <strong>
+                            <span class="display-5 fs-6">Pay course fee 500 rupees at +916006413987 by 'Paytm' or
+                                'PhonePe'
+                                and
+                                send a screenshot</span>
+                        </strong>
+                        <div class="form-outline mb-4">
+                            <input type="file" class="form-control" id="customFile" name='scrnsht'/>
+                        </div>
+
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock body %}
+
+{% block js %}{% endblock js %}
