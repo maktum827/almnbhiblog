@@ -1,6 +1,20 @@
 {% extends 'basic.html' %}
 {% block title %}Home page{% endblock title %}
 
+{% block css %}
+<style>
+    h3.shifts {
+        display: flex;
+        width: 188px;
+        background: darkgreen;
+        color: wheat;
+        margin: auto;
+        height: 41px;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+{% endblock css %}
 {% block body %}
 {% load static %}
 <div class="container-fluid" style="">
@@ -79,6 +93,26 @@
         </div>
 
     </div>
+</div>
+
+<div class="container" style='margin-top:80px'>
+    <h3 class='shifts'>OUR SHIFTS</h3>
+    <table class="table table-bordered border-primary">
+        <thead>
+          <tr class="align-middle">
+            <th scope="col" style='font-size:20px'>FIRST SHIFT</th>
+            <th scope="col" style='font-size:20px'>SECOND SHIFT</th>
+            <th scope="col" style='font-size:20px'>THIRD SHIFT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AFTER FAZAR (45 MINUTES)</td>
+            <td>AFTER (ASAR 45 MINUTES)</td>
+            <td>AFTER 10PM (45 MINUTES)</td>
+          </tr>
+        </tbody>
+      </table>
 </div>
 
 <!--Main layout-->
